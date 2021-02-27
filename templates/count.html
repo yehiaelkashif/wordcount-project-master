@@ -1,0 +1,23 @@
+
+  <h1>there are {{count}} words in your text</h1>
+
+  <h1>Orginal</h1>
+  {{fulltext}}
+
+  <h1>word count</h1>
+
+
+{%  for word, counttotal in wordCountDictionary %}
+
+{{word}}
+<br/>
+{{counttotal}}
+<br/>
+
+{% endfor %}
+
+
+def all_aboard(a, *args, **kw):
+    print(a, args, kw)
+
+all_aboard(4, 7, 3, 0, x=10, y=64)
